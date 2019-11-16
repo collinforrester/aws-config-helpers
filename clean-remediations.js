@@ -1,8 +1,8 @@
 const AWS = require('aws-sdk');
 // https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-credentials-node.html
-const credentials = new AWS.SharedIniFileCredentials({profile: 'collinsandbox'});
+const credentials = new AWS.SharedIniFileCredentials({profile: 'UPDATE_YOUR_PROFILE'});
 AWS.config.credentials = credentials;
-const configService = new AWS.ConfigService({ region: 'eu-central-1' });
+const configService = new AWS.ConfigService({ region: 'UPDATE_YOUR_REGION' });
 
 // Because this is destructive, please uncomment the line below, save, and re-run to make sure you want to 
 // DESTROY ALL OF YOUR CONFIG REMEDIATIONS AND RULES.
